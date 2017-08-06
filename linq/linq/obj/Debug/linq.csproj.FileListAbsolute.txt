@@ -4,3 +4,9 @@ D:\VSProjects\linq\linq\bin\Debug\linq.pdb
 D:\VSProjects\linq\linq\obj\Debug\linq.csprojResolveAssemblyReference.cache
 D:\VSProjects\linq\linq\obj\Debug\linq.exe
 D:\VSProjects\linq\linq\obj\Debug\linq.pdb
+d:\GitHub\Repos\LinqTest\linq\linq\bin\Debug\linq.exe.config
+d:\GitHub\Repos\LinqTest\linq\linq\obj\Debug\linq.exe
+d:\GitHub\Repos\LinqTest\linq\linq\obj\Debug\linq.pdb
+d:\GitHub\Repos\LinqTest\linq\linq\bin\Debug\linq.exe
+d:\GitHub\Repos\LinqTest\linq\linq\bin\Debug\linq.pdb
+d:\GitHub\Repos\LinqTest\linq\linq\obj\Debug\linq.csprojResolveAssemblyReference.cache
