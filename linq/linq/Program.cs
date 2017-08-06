@@ -16,21 +16,26 @@ namespace linq
             var db = new dbDataContext();
             var tb = db.tbCustomers;
             int count = tb.Count();
-            Console.WriteLine(count);
-            var list=(from u in tb where u.Lname.Contains("mohy") select new { u.Fname,u.Lname,u.TelegramId,u.mobile}).Count();
-            Console.WriteLine("name={0} ", list);
+            //Console.WriteLine(count);
+            var list=(from u in tb  select new { u.Fname,u.Lname,u.TelegramId,u.mobile}).Count();
+            Console.WriteLine("Count={0} ", list);
             var list2 = (from u in tb  select new { u.Fname, u.Lname, u.TelegramId, u.mobile });
             foreach (var r in list2)
             {
-                Console.WriteLine("name={0} {1}", r.Fname ,r.Lname);
+                Console.WriteLine("{0} {1} {2} {3}", r.Fname ,r.Lname,r.mobile,r.TelegramId);
             }
-            tbCustomer rb = new tbCustomer
-            {
-                TelegramId=11111,
-                Fname="Reza",
-                Lname="Hosseini",
-                mobile="09153331099"
-            };
+            tbCustomer rb = new tbCustomer();
+            Console.Write("TelegramID=");
+            rb.TelegramId = Convert.ToInt32(Console.ReadLine());
+            Console.Write("First Name=");
+            rb.Fname = Console.ReadLine();
+            Console.Write("Last Name=");
+            rb.Lname = Console.ReadLine();
+            Console.Write("Mobile=");
+            rb.mobile = Console.ReadLine();
+
+
+
             db.tbCustomers.InsertOnSubmit(rb);
             try
             {
