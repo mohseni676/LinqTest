@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace linq.Properties {
+namespace TelegramBotNew.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
@@ -23,14 +23,15 @@ namespace linq.Properties {
             }
         }
         
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=ALI-PC\\SQL2014;Initial Catalog=cms;Persist Security Info=True;User ID" +
-            "=sa;Password=123456")]
-        public string cmsConnectionString {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Token {
             get {
-                return ((string)(this["cmsConnectionString"]));
+                return ((string)(this["Token"]));
+            }
+            set {
+                this["Token"] = value;
             }
         }
     }
