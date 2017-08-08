@@ -29,10 +29,12 @@ namespace TelegramBotNew
             while(true)
             {
                 bot.update = "true";
-                txt_status.Text = bot.update.ToString();
-                if (bot.message_id!="")
+                //txt_status.Text = bot.update.ToString();
+                if (bot.message_id != "")
                 {
-
+                    txt_status.Text += bot.update.ToString() + "\r\n" + "----------------------------------------------";
+                    txt_Message.Text += bot.from_username + "{" + bot.from_first_name+" " + bot.from_last_name+"("+bot.from_ID+")"+"}===>  "+ bot.message_id + "||" + bot.message_text+"\r\n";
+                    bot.SendPhoto("");
                 }//if message id
             }//while
         }

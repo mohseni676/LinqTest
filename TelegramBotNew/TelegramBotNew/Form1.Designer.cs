@@ -31,6 +31,7 @@
             this.txt_status = new System.Windows.Forms.TextBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.btn_token_insert = new System.Windows.Forms.Button();
+            this.txt_Message = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txt_status
@@ -38,7 +39,8 @@
             this.txt_status.Location = new System.Drawing.Point(12, 12);
             this.txt_status.Multiline = true;
             this.txt_status.Name = "txt_status";
-            this.txt_status.Size = new System.Drawing.Size(703, 230);
+            this.txt_status.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txt_status.Size = new System.Drawing.Size(703, 224);
             this.txt_status.TabIndex = 0;
             // 
             // backgroundWorker1
@@ -47,7 +49,7 @@
             // 
             // btn_token_insert
             // 
-            this.btn_token_insert.Location = new System.Drawing.Point(12, 248);
+            this.btn_token_insert.Location = new System.Drawing.Point(272, 486);
             this.btn_token_insert.Name = "btn_token_insert";
             this.btn_token_insert.Size = new System.Drawing.Size(158, 38);
             this.btn_token_insert.TabIndex = 1;
@@ -55,11 +57,21 @@
             this.btn_token_insert.UseVisualStyleBackColor = true;
             this.btn_token_insert.Click += new System.EventHandler(this.btn_token_insert_Click);
             // 
+            // txt_Message
+            // 
+            this.txt_Message.Location = new System.Drawing.Point(12, 242);
+            this.txt_Message.Multiline = true;
+            this.txt_Message.Name = "txt_Message";
+            this.txt_Message.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.txt_Message.Size = new System.Drawing.Size(703, 238);
+            this.txt_Message.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(727, 356);
+            this.ClientSize = new System.Drawing.Size(727, 526);
+            this.Controls.Add(this.txt_Message);
             this.Controls.Add(this.btn_token_insert);
             this.Controls.Add(this.txt_status);
             this.Name = "Form1";
@@ -75,6 +87,7 @@
         private System.Windows.Forms.TextBox txt_status;
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Button btn_token_insert;
+        private System.Windows.Forms.TextBox txt_Message;
     }
 }
 
